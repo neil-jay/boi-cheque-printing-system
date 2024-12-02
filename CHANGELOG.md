@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.14](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.13...v0.1.14) (2024-12-02)
+
+
+### Features
+
+* Add footer to the page ([694ba24](https://github.com/neil-jay/cheque-printing-system/commit/694ba24ec1bb1aa47db583634d3c266d624cad9a))
+
 ### [0.1.13](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.12...v0.1.13) (2024-12-02)
 
 
