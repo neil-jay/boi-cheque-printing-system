@@ -62,7 +62,7 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
         }}
       >
         {/* Date Section */}
-        <div className="absolute top-8 right-[-0.2rem] p-1"> {/* right-8 changed to right-[-0.2rem] */}
+        <div className="absolute top-8 right-[-0.4rem] p-1"> {/* right-8 changed to right-[-0.2rem] */}
           <div className="grid grid-cols-8 gap-1">
             {formatDate(date).split('').map((char, i) => (
               <div key={i} className="w-4 h-4 flex items-center justify-center text-xs">
@@ -80,14 +80,14 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
         </div>
 
         {/* Amount in Words Section */}
-        <div className="mb-0 mt-[-0.5rem] ml-36"> {/* ml-24 changed to ml-36 */}
+        <div className="mb-0 mt-[-0.7rem] ml-36"> {/* ml-24 changed to ml-36 */}
           <div className="flex-1">
             {amountInWords}
           </div>
         </div>
 
         {/* Amount in Numbers */}
-        <div className="absolute right-8 top-32 px-4 py-2">
+        <div className="absolute right-10 top-32 px-4 py-2"> {/* right-8 changed to right-10 */}
           {formattedAmount}
         </div>
       </div>
