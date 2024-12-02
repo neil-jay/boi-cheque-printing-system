@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.5...v0.1.6) (2024-12-02)
+
+
+### Features
+
+* Set name in caps in print ([24321ad](https://github.com/neil-jay/cheque-printing-system/commit/24321ad58cf58433a0a4f57ec7c0458ff4efaf21))
+
 ### [0.1.5](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.4...v0.1.5) (2024-12-02)
 
 
