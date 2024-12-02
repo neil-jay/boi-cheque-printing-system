@@ -32,15 +32,15 @@ export default function ChequePrinter() {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-4">Simplified Cheque Printing System</h1>
+        <h1 className="text-2xl font-bold mb-4 text-center">Simplified Cheque Printing System</h1>
         <div className="space-y-8">
           <div>
-            <h2 className="text-xl font-semibold mb-2">Enter Cheque Details</h2>
+            <h2 className="text-xl font-semibold mb-2 text-center">Enter Cheque Details</h2>
             <ChequeForm onSubmit={setChequeData} />
           </div>
           {chequeData && (
             <div>
-              <h2 className="text-xl font-semibold mb-2">Cheque Preview</h2>
+              <h2 className="text-xl font-semibold mb-2 text-center">Cheque Preview</h2>
               <div className="overflow-x-auto">
                 <Cheque ref={chequeRef} {...chequeData} />
                 <Button onClick={handlePrint} className="mt-4">
@@ -55,4 +55,3 @@ export default function ChequePrinter() {
     </div>
   )
 }
-

@@ -30,42 +30,46 @@ export function ChequeForm({ onSubmit }: ChequeFormProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <Label htmlFor="payee">Payee Name</Label>
-        <Input
-          id="payee"
-          name="payee"
-          value={chequeData.payee}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <Label htmlFor="amount">Amount (₹)</Label>
-        <Input
-          id="amount"
-          name="amount"
-          type="number"
-          step="0.01"
-          value={chequeData.amount}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <Label htmlFor="date">Date</Label>
-        <Input
-          id="date"
-          name="date"
-          type="date"
-          value={chequeData.date}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <Button type="submit">Generate Cheque</Button>
-    </form>
+    <div className="flex justify-center">
+      <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
+        <div>
+          <Label htmlFor="payee">Payee Name</Label>
+          <Input
+            id="payee"
+            name="payee"
+            value={chequeData.payee}
+            onChange={handleChange}
+            required
+            className="max-w-md"
+          />
+        </div>
+        <div>
+          <Label htmlFor="amount">Amount (₹)</Label>
+          <Input
+            id="amount"
+            name="amount"
+            type="number"
+            step="0.01"
+            value={chequeData.amount}
+            onChange={handleChange}
+            required
+            className="max-w-md"
+          />
+        </div>
+        <div>
+          <Label htmlFor="date">Date</Label>
+          <Input
+            id="date"
+            name="date"
+            type="date"
+            value={chequeData.date}
+            onChange={handleChange}
+            required
+            className="max-w-md"
+          />
+        </div>
+        <Button type="submit">Generate Cheque</Button>
+      </form>
+    </div>
   )
 }
-
