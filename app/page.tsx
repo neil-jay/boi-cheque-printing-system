@@ -28,8 +28,8 @@ export default function ChequePrinter() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Cheque Printing System</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <h1 className="text-2xl font-bold mb-4">Simplified Cheque Printing System</h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
           <h2 className="text-xl font-semibold mb-2">Enter Cheque Details</h2>
           <ChequeForm onSubmit={setChequeData} />
@@ -37,16 +37,15 @@ export default function ChequePrinter() {
         <div>
           <h2 className="text-xl font-semibold mb-2">Cheque Preview</h2>
           {chequeData && (
-            <>
+            <div className="overflow-x-auto">
               <Cheque ref={chequeRef} {...chequeData} />
               <Button onClick={handlePrint} className="mt-4">
                 Print Cheque
               </Button>
-            </>
+            </div>
           )}
         </div>
       </div>
     </div>
   )
 }
-

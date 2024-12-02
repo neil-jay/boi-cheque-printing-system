@@ -32,7 +32,7 @@ export function ChequeForm({ onSubmit }: ChequeFormProps) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <Label htmlFor="payee">Payee</Label>
+        <Label htmlFor="payee">Payee Name</Label>
         <Input
           id="payee"
           name="payee"
@@ -42,7 +42,7 @@ export function ChequeForm({ onSubmit }: ChequeFormProps) {
         />
       </div>
       <div>
-        <Label htmlFor="amount">Amount</Label>
+        <Label htmlFor="amount">Amount (₹)</Label>
         <Input
           id="amount"
           name="amount"
