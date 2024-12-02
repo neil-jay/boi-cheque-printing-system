@@ -97,7 +97,7 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
         </div>
 
         {/* Amount in Numbers */}
-        <div className="absolute right-12 top-32 px-4 py-2">
+        <div className="absolute right-14 top-32 px-4 py-2">
           {formattedAmount}
         </div>
       </div>
@@ -106,4 +106,3 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
 )
 
 Cheque.displayName = 'Cheque'
-
