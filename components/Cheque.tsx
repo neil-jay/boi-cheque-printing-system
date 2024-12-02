@@ -54,10 +54,15 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
     return (
       <div
         ref={ref}
-        className="w-[800px] h-[350px] border-2 border-gray-300 p-6 bg-white text-black relative font-serif"
+        className="w-[800px] h-[350px] border-2 border-gray-300 p-6 bg-white text-black relative"
+        style={{
+          fontFamily: "'Courier New', Courier, monospace",
+          fontSize: '16px',
+          lineHeight: '1.5'
+        }}
       >
         {/* Date Section */}
-        <div className="absolute top-4 right-4 p-1">
+        <div className="absolute top-8 right-4 p-1">
           <div className="grid grid-cols-8 gap-1">
             {formatDate(date).split('').map((char, i) => (
               <div key={i} className="w-4 h-4 flex items-center justify-center text-xs">
@@ -68,14 +73,14 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
         </div>
 
         {/* Payee Name Section */}
-        <div className="mb-4 mt-16">
+        <div className="mb-4 mt-24 ml-16">
           <div className="flex-1 uppercase">
             {payee}
           </div>
         </div>
 
         {/* Amount in Words Section */}
-        <div className="mb-4">
+        <div className="mb-4 ml-16">
           <div className="flex-1">
             {amountInWords}
           </div>
