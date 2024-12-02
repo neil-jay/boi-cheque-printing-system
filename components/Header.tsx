@@ -16,12 +16,6 @@ export default function Header() {
               <Link href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Home
               </Link>
-              <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                About
-              </Link>
-              <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                Contact
-              </Link>
             </div>
           </div>
         </div>
@@ -29,15 +23,8 @@ export default function Header() {
           <Link href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
             Home
           </Link>
-          <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            About
-          </Link>
-          <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-            Contact
-          </Link>
         </div>
       </nav>
     </header>
   )
 }
-
