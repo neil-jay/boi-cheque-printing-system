@@ -57,10 +57,10 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
         className="w-[800px] h-[350px] border-2 border-gray-300 p-6 bg-white text-black relative font-serif"
       >
         {/* Date Section */}
-        <div className="absolute top-4 right-4 border border-gray-300 p-1">
+        <div className="absolute top-4 right-4 p-1">
           <div className="grid grid-cols-8 gap-1">
             {formatDate(date).split('').map((char, i) => (
-              <div key={i} className="border border-gray-300 w-4 h-4 flex items-center justify-center text-xs">
+              <div key={i} className="w-4 h-4 flex items-center justify-center text-xs">
                 {char}
               </div>
             ))}
@@ -69,20 +69,20 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
 
         {/* Payee Name Section */}
         <div className="mb-4 mt-16">
-          <div className="flex-1 border-b-2 border-gray-300 uppercase">
+          <div className="flex-1 uppercase">
             {payee}
           </div>
         </div>
 
         {/* Amount in Words Section */}
         <div className="mb-4">
-          <div className="flex-1 border-b-2 border-gray-300">
+          <div className="flex-1">
             {amountInWords}
           </div>
         </div>
 
         {/* Amount in Numbers */}
-        <div className="absolute right-8 top-32 border-2 border-gray-300 px-4 py-2">
+        <div className="absolute right-8 top-32 px-4 py-2">
           {formattedAmount}
         </div>
       </div>
@@ -91,4 +91,3 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
 )
 
 Cheque.displayName = 'Cheque'
-
