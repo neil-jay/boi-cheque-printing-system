@@ -4,7 +4,8 @@ import { useState, useRef } from 'react'
 import { ChequeForm } from '@/components/ChequeForm'
 import { Cheque } from '@/components/Cheque'
 import { Button } from "@/components/ui/button"
-import { Footer } from '@/components/Footer'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 export default function ChequePrinter() {
   const [chequeData, setChequeData] = useState<{
@@ -29,6 +30,7 @@ export default function ChequePrinter() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Header />
       <main className="flex-grow container mx-auto p-4">
         <h1 className="text-2xl font-bold mb-4">Simplified Cheque Printing System</h1>
         <div className="space-y-8">
