@@ -39,14 +39,14 @@ export default function ChequePrinter() {
             <ChequeForm onSubmit={setChequeData} />
           </div>
           {chequeData && (
-            <div>
+            <div className="flex flex-col items-center">
               <h2 className="text-xl font-semibold mb-2 text-center">Cheque Preview</h2>
-              <div className="overflow-x-auto">
+              <div className="w-full max-w-3xl">
                 <Cheque ref={chequeRef} {...chequeData} />
-                <Button onClick={handlePrint} className="mt-4">
-                  Print Cheque
-                </Button>
               </div>
+              <Button onClick={handlePrint} className="mt-4">
+                Print Cheque
+              </Button>
             </div>
           )}
         </div>
@@ -55,3 +55,4 @@ export default function ChequePrinter() {
     </div>
   )
 }
+

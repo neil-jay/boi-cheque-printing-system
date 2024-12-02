@@ -64,7 +64,7 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
     return (
       <div
         ref={ref}
-        className="w-[800px] h-[350px] border-2 border-gray-300 p-6 bg-white text-black relative"
+        className="w-full max-w-3xl h-auto aspect-[16/7] border-2 border-gray-300 p-6 bg-white text-black relative"
         style={{
           fontFamily: "'Courier New', Courier, monospace",
           fontSize: '16px',
