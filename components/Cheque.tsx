@@ -9,10 +9,9 @@ interface ChequeProps {
 export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
   ({ payee, amount, date }, ref) => {
     const formattedAmount = new Intl.NumberFormat('en-IN', {
-      style: 'currency',
-      currency: 'INR',
-      minimumFractionDigits: 2
-    }).format(Number(amount)).replace('INR', '₹')
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }).format(Number(amount))
 
     const numberToWords = (num: number) => {
       const units = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
@@ -61,7 +60,7 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
         <div className="absolute top-4 right-4 border border-gray-300 p-1">
           <div className="grid grid-cols-8 gap-1">
             {formatDate(date).split('').map((char, i) => (
-              <div key={i} className="border border-gray-300 w-6 h-6 flex items-center justify-center">
+              <div key={i} className="border border-gray-300 w-4 h-4 flex items-center justify-center text-xs">
                 {char}
               </div>
             ))}
@@ -92,3 +91,4 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
 )
 
 Cheque.displayName = 'Cheque'
+
