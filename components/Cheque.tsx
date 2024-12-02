@@ -70,7 +70,7 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
 
         {/* Payee Name Section */}
         <div className="mb-4 mt-16">
-          <div className="flex-1 border-b-2 border-gray-300">
+          <div className="flex-1 border-b-2 border-gray-300 uppercase">
             {payee}
           </div>
         </div>
@@ -92,4 +92,3 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
 )
 
 Cheque.displayName = 'Cheque'
-
