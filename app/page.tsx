@@ -4,6 +4,7 @@ import { useState, useRef } from 'react'
 import { ChequeForm } from '@/components/ChequeForm'
 import { Cheque } from '@/components/Cheque'
 import { Button } from "@/components/ui/button"
+import { Footer } from '@/components/Footer'
 
 export default function ChequePrinter() {
   const [chequeData, setChequeData] = useState<{
@@ -27,25 +28,29 @@ export default function ChequePrinter() {
   }
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Simplified Cheque Printing System</h1>
-      <div className="space-y-8">
-        <div>
-          <h2 className="text-xl font-semibold mb-2">Enter Cheque Details</h2>
-          <ChequeForm onSubmit={setChequeData} />
-        </div>
-        {chequeData && (
+    <div className="min-h-screen flex flex-col">
+      <main className="flex-grow container mx-auto p-4">
+        <h1 className="text-2xl font-bold mb-4">Simplified Cheque Printing System</h1>
+        <div className="space-y-8">
           <div>
-            <h2 className="text-xl font-semibold mb-2">Cheque Preview</h2>
-            <div className="overflow-x-auto">
-              <Cheque ref={chequeRef} {...chequeData} />
-              <Button onClick={handlePrint} className="mt-4">
-                Print Cheque
-              </Button>
-            </div>
+            <h2 className="text-xl font-semibold mb-2">Enter Cheque Details</h2>
+            <ChequeForm onSubmit={setChequeData} />
           </div>
-        )}
-      </div>
+          {chequeData && (
+            <div>
+              <h2 className="text-xl font-semibold mb-2">Cheque Preview</h2>
+              <div className="overflow-x-auto">
+                <Cheque ref={chequeRef} {...chequeData} />
+                <Button onClick={handlePrint} className="mt-4">
+                  Print Cheque
+                </Button>
+              </div>
+            </div>
+          )}
+        </div>
+      </main>
+      <Footer />
     </div>
   )
 }
+
