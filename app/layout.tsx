@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'Bank of India Cheque Printing System',
     description: 'Print Bank of India cheques online with our official BOI cheque printing tool.',
     type: 'website',
-    url: 'https://boi-cheque-printing.example.com',
+    url: 'https://boi-cheque-printing-system.vercel.app/',
     images: [
       {
         url: 'https://boi-cheque-printing.example.com/og-image.jpg',
