@@ -53,7 +53,7 @@ export default function ChequePrinter() {
               <div className="w-full max-w-3xl">
                 <Cheque ref={chequeRef} {...chequeData} />
               </div>
-              <Button onClick={handlePrint} className="mt-4">
+              <Button onClick={handlePrint} className="mt-4 bg-green-500 hover:bg-green-600 text-white">
                 Print Bank of India Cheque
               </Button>
             </div>

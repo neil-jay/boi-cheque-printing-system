@@ -52,7 +52,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
+                    <Link href="/terms" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
                       Terms of Service
                     </Link>
                   </li>
