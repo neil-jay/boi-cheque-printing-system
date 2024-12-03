@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.26](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.25...v0.1.26) (2024-12-03)
+
+
+### Features
+
+* Update font family ([fbb2bcb](https://github.com/neil-jay/cheque-printing-system/commit/fbb2bcb07dd0e3576b02e2a2e668da47513ea34e))
+
 ### [0.1.25](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.24...v0.1.25) (2024-12-03)
 
 
