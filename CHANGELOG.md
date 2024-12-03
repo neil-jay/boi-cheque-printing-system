@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.32](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.31...v0.1.32) (2024-12-03)
+
+
+### Bug Fixes
+
+* Fix Apostrophe issue ([e333787](https://github.com/neil-jay/cheque-printing-system/commit/e3337873636efcb2d0bcdb8a78f2793e5e3037b2))
+
 ### [0.1.31](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.30...v0.1.31) (2024-12-03)
 
 
