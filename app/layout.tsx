@@ -7,8 +7,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Bank of India Cheque Printing System | Print BOI Cheques Online',
-  description: 'Official Bank of India cheque printing system. Easily print BOI cheques online with our secure and user-friendly tool. Compatible with all Bank of India cheque books.',
-  keywords: 'Bank of India, BOI, cheque printing, online cheque, Bank of India cheque book, BOI cheque system',
+  description: 'Official Bank of India cheque printing system. Easily print BOI cheques online with our secure, user-friendly, and open-source tool. Compatible with all Bank of India cheque books.',
+  keywords: 'Bank of India, BOI, cheque printing, online cheque, Bank of India cheque book, BOI cheque system, open-source',
+  authors: [{ name: 'Your Name', url: 'https://yourwebsite.com' }],
+  creator: 'Your Name or Organization',
+  publisher: 'Your Name or Organization',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
     title: 'Bank of India Cheque Printing System',
     description: 'Print Bank of India cheques online with our official BOI cheque printing tool.',
@@ -29,6 +37,8 @@ export const metadata: Metadata = {
     description: 'Print Bank of India cheques online with our official BOI cheque printing tool.',
     images: ['https://boi-cheque-printing.example.com/twitter-image.jpg'],
   },
+  viewport: 'width=device-width, initial-scale=1',
+  themeColor: '#ffffff',
 }
 
 export default function RootLayout({
@@ -38,6 +48,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body className={inter.className}>
         {children}
         <Analytics />
