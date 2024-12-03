@@ -37,8 +37,8 @@ export default function ChequePrinter() {
         <h1 className="text-2xl font-bold mb-4 text-center">Bank of India Cheque Printing System</h1>
         <div className="space-y-8">
           <div>
-            <Alert className="mb-6">
-              <InfoIcon className="h-4 w-4" />
+            <Alert className="mb-6 bg-yellow-100 border-yellow-400 text-yellow-800">
+              <InfoIcon className="h-4 w-4 text-yellow-800" />
               <AlertTitle>Important Note</AlertTitle>
               <AlertDescription>
                 This system works exclusively with Bank of India cheques. Please ensure you are using a Bank of India cheque book.
