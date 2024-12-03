@@ -64,7 +64,7 @@ export default function ChequePrinterClient() {
           This Bank of India Cheque Printing System is an open-source project. We welcome contributions from the community.
         </p>
         <div className="flex justify-center">
-          <Button variant="outline" size="sm" asChild className="bg-blue-500 hover:bg-blue-600 text-white">
+          <Button variant="outline" size="sm" asChild className="bg-blue-700 hover:bg-blue-800 text-white">
             <Link href="https://github.com/neil-jay/boi-cheque-printing-system">
               <Star className="w-4 h-4 mr-2" />
               Star on GitHub
