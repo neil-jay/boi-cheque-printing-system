@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.24](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.23...v0.1.24) (2024-12-03)
+
+
+### Features
+
+* Add alert component ([92acedb](https://github.com/neil-jay/cheque-printing-system/commit/92acedb4275657c65b8dca0916f9ffc6f0280d72))
+* Apply alert component ([3916d33](https://github.com/neil-jay/cheque-printing-system/commit/3916d3339d8585e4b9bb93b2aba7582e9705bd45))
+
 ### [0.1.23](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.22...v0.1.23) (2024-12-03)
 
 
