@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <h2 className="text-2xl font-bold tracking-tight text-white">
-              Cheque Printing System
+              Bank of India Cheque Printing System
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Making cheque printing easy and efficient for everyone. Our system ensures accuracy and simplicity in your financial transactions.
+              Secure and efficient cheque printing for Bank of India account holders. Our system ensures accuracy and simplicity in your financial transactions.
             </p>
             <div className="flex space-x-6">
               <Link href="#" className="text-gray-400 hover:text-gray-300">
@@ -35,7 +35,7 @@ export default function Footer() {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href="/help" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
+                    <Link href="#" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
                       Help Center
                     </Link>
                   </li>
@@ -47,18 +47,13 @@ export default function Footer() {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href="#" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
+                    <Link href="/privacy" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
                     <Link href="#" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
                       Terms of Service
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
-                      Author
                     </Link>
                   </li>
                 </ul>
