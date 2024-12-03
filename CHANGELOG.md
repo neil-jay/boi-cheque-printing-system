@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.34](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.33...v0.1.34) (2024-12-03)
+
+
+### Features
+
+* Update contact card ([915c8eb](https://github.com/neil-jay/cheque-printing-system/commit/915c8eb8ac220fb2b1f9fbe4d94cd5b5be2d9c84))
+* Update link ([b09275c](https://github.com/neil-jay/cheque-printing-system/commit/b09275c845648817d44e7181ce8d90b821a9c27b))
+
 ### [0.1.33](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.32...v0.1.33) (2024-12-03)
 
 
