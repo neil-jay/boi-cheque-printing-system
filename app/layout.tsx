@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { Metadata } from 'next'
+import { Metadata, Viewport } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: 'Bank of India Cheque Printing System | Print BOI Cheques Online',
   description: 'Official Bank of India cheque printing system. Easily print BOI cheques online with our secure, user-friendly, and open-source tool. Compatible with all Bank of India cheque books.',
   keywords: 'Bank of India, BOI, cheque printing, online cheque, Bank of India cheque book, BOI cheque system, open-source',
-  authors: [{ name: 'Your Name', url: 'https://yourwebsite.com' }],
-  creator: 'Your Name or Organization',
-  publisher: 'Your Name or Organization',
+  authors: [{ name: 'neiljay', url: 'https://github.com/neil-jay' }],
+  creator: 'Neil Jay',
+  publisher: 'Bank of India Cheque Printing System',
   formatDetection: {
     email: false,
     address: false,
@@ -37,7 +37,11 @@ export const metadata: Metadata = {
     description: 'Print Bank of India cheques online with our official BOI cheque printing tool.',
     images: ['https://boi-cheque-printing.example.com/twitter-image.jpg'],
   },
-  viewport: 'width=device-width, initial-scale=1',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
   themeColor: '#ffffff',
 }
 
