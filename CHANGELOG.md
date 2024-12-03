@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.37](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.36...v0.1.37) (2024-12-03)
+
+
+### Bug Fixes
+
+* Fix sequential order ([135cf30](https://github.com/neil-jay/cheque-printing-system/commit/135cf30fdfbe96268aa3fff67b13ee9080af9f3e))
+
 ### [0.1.36](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.35...v0.1.36) (2024-12-03)
 
 
