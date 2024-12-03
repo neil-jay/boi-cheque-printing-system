@@ -73,8 +73,7 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">Contact Us</h2>
               <p className="mb-2 text-gray-600">If you have any questions about this Privacy Policy, please contact us at:</p>
               <p className="text-gray-800">
-                Email: <a href="mailto:privacy@boi-chequeprinting.com" className="text-blue-600 hover:underline">privacy@boi-chequeprinting.com</a><br />
-                Phone: +91 XXXXXXXXXX
+                Email: <span className="text-gray-800">{'neiljay'} [at] {'pcmender'} [dot] {'online'}</span>
               </p>
             </div>
           </div>

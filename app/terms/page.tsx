@@ -53,15 +53,11 @@ export default function TermsPage() {
             <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">6. Modifications to the Service</h2>
             <p className="mb-4 leading-relaxed text-gray-600">We reserve the right to modify or discontinue the service at any time, with or without notice.</p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-800">7. Governing Law</h2>
-            <p className="mb-4 leading-relaxed text-gray-600">These terms are governed by the laws of India. Any disputes arising from the use of this service shall be subject to the exclusive jurisdiction of the courts in India.</p>
-
             <div className="bg-gray-100 p-4 rounded-lg mt-8">
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">8. Contact Information</h2>
               <p className="mb-2 text-gray-600">If you have any questions about these Terms of Service, please contact us at:</p>
               <p className="text-gray-800">
-                Email: <a href="mailto:terms@boi-chequeprinting.com" className="text-blue-600 hover:underline">terms@boi-chequeprinting.com</a><br />
-                Phone: +91 XXXXXXXXXX
+                Email: <span className="text-gray-800">{'neiljay'} [at] {'pcmender'} [dot] {'online'}</span>
               </p>
             </div>
           </div>
