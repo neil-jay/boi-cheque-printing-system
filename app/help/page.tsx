@@ -92,8 +92,7 @@ export default function HelpPage() {
               </h2>
               <p className="text-gray-800 mb-4">If you need further assistance, please don&apos;t hesitate to contact our support team:</p>
               <p className="text-gray-800">
-                Email: <a href="mailto:support@boi-chequeprinting.com" className="text-blue-700 hover:underline">support@boi-chequeprinting.com</a><br />
-                Phone: +91 XXXXXXXXXX
+                Email: <span className="text-gray-800">{'neiljay'} [at] {'pcmender'} [dot] {'online'}</span>
               </p>
             </section>
           </div>
