@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.41](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.40...v0.1.41) (2024-12-03)
+
+
+### Bug Fixes
+
+* Fix persistent Eslint issue ([55d4446](https://github.com/neil-jay/cheque-printing-system/commit/55d4446052968b102513f4eca93f6e5cef4b71cd))
+
 ### [0.1.40](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.39...v0.1.40) (2024-12-03)
 
 
