@@ -71,10 +71,12 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        terms: ['Arial', 'Helvetica', 'sans-serif'],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
 }
 
 export default config
-
