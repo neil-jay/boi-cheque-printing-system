@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.28](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.27...v0.1.28) (2024-12-03)
+
+
+### Features
+
+* Update warning color for note ([740b7eb](https://github.com/neil-jay/cheque-printing-system/commit/740b7eb8a7f4197346e445fb55f3924e17283df4))
+
 ### [0.1.27](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.26...v0.1.27) (2024-12-03)
 
 
