@@ -5,7 +5,7 @@ import { ChequeForm } from '@/components/ChequeForm'
 import { Cheque } from '@/components/Cheque'
 import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { InfoIcon, Github, Star } from 'lucide-react'
+import { InfoIcon, Star } from 'lucide-react'
 import Link from 'next/link'
 
 export default function ChequePrinterClient() {
@@ -63,15 +63,9 @@ export default function ChequePrinterClient() {
         <p className="text-sm text-gray-600 mb-4">
           This Bank of India Cheque Printing System is an open-source project. We welcome contributions from the community.
         </p>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center">
           <Button variant="outline" size="sm" asChild className="bg-blue-500 hover:bg-blue-600 text-white">
-            <Link href="https://github.com/yourusername/boi-cheque-printing">
-              <Github className="w-4 h-4 mr-2" />
-              Fork on GitHub
-            </Link>
-          </Button>
-          <Button variant="outline" size="sm" asChild className="bg-blue-500 hover:bg-blue-600 text-white">
-            <Link href="https://github.com/yourusername/boi-cheque-printing">
+            <Link href="https://github.com/neil-jay/boi-cheque-printing-system">
               <Star className="w-4 h-4 mr-2" />
               Star on GitHub
             </Link>
