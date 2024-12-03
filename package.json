@@ -1,6 +1,6 @@
 {
   "name": "cheque-printing-system",
-  "version": "0.1.41",
+  "version": "0.1.42",
   "private": true,
   "scripts": {
     "dev": "next dev",
