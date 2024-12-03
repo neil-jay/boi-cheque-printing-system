@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.22](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.21...v0.1.22) (2024-12-03)
+
+
+### Features
+
+* Add Vercel Analytics ([e3720b4](https://github.com/neil-jay/cheque-printing-system/commit/e3720b41eb87d420b4d1a9d626f46243c0cbca24))
+
+
+### Documentation
+
+* Update Privacy ([984de95](https://github.com/neil-jay/cheque-printing-system/commit/984de956ee706706cdd0cb0b317515ba816c79c0))
+
 ### [0.1.21](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.20...v0.1.21) (2024-12-03)
 
 
