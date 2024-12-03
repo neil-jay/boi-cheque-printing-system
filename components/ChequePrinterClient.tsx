@@ -30,48 +30,54 @@ export default function ChequePrinterClient() {
   }
 
   return (
-    <div className="space-y-8">
-      <section>
-        <Alert className="mb-6 bg-yellow-100 border-yellow-400 text-yellow-800">
-          <InfoIcon className="h-4 w-4 text-yellow-800" />
-          <AlertTitle>Important Note</AlertTitle>
-          <AlertDescription>
-            This system works exclusively with Bank of India cheques. Please ensure you are using a Bank of India cheque book.
-          </AlertDescription>
-        </Alert>
-        <h2 className="text-2xl font-semibold mb-4 text-center">Enter Bank of India Cheque Details</h2>
+    <div className="space-y-6 max-w-2xl mx-auto">
+      <Alert className="bg-yellow-50 border-yellow-200 text-yellow-800">
+        <InfoIcon className="h-4 w-4 text-yellow-800" />
+        <AlertTitle className="font-semibold">Important Note</AlertTitle>
+        <AlertDescription className="text-sm">
+          This system works exclusively with Bank of India cheques. Please ensure you are using a Bank of India cheque book.
+        </AlertDescription>
+      </Alert>
+      
+      <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h2 className="text-xl font-semibold mb-4 text-[#003399]">Enter Bank of India Cheque Details</h2>
         <ChequeForm onSubmit={setChequeData} />
-      </section>
+      </div>
+
       {chequeData && (
-        <section className="flex flex-col items-center">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Bank of India Cheque Preview</h2>
-          <div className="w-full max-w-3xl">
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <h2 className="text-xl font-semibold mb-4 text-[#003399]">Bank of India Cheque Preview</h2>
+          <div className="w-full">
             <Cheque ref={chequeRef} {...chequeData} />
           </div>
-          <Button onClick={handlePrint} className="mt-6 bg-green-500 hover:bg-green-600 text-white">
-            Print Bank of India Cheque
-          </Button>
-        </section>
+          <div className="mt-4 text-center">
+            <Button onClick={handlePrint} className="bg-green-500 hover:bg-green-600 text-white">
+              Print Bank of India Cheque
+            </Button>
+          </div>
+        </div>
       )}
-      <section className="mt-12 text-center">
-        <h2 className="text-xl font-semibold mb-2">Open Source Project</h2>
+
+      <div className="bg-blue-50 p-6 rounded-lg text-center">
+        <h2 className="text-lg font-semibold mb-2 text-[#003399]">Open Source Project</h2>
         <p className="text-sm text-gray-600 mb-4">
           This Bank of India Cheque Printing System is an open-source project. We welcome contributions from the community.
         </p>
         <div className="flex justify-center space-x-4">
-          <Link href="https://github.com/neil-jay/cheque-printing-system" className="inline-flex items-center text-blue-600 hover:underline">
-            <Github className="w-5 h-5 mr-2" />
-            Fork on GitHub
-          </Link>
-          <Link href="https://github.com/neil-jay/cheque-printing-system" className="inline-flex items-center text-blue-600 hover:underline">
-            <Star className="w-5 h-5 mr-2" />
-            Star on GitHub
-          </Link>
+          <Button variant="outline" size="sm" asChild className="bg-blue-500 hover:bg-blue-600 text-white">
+            <Link href="https://github.com/yourusername/boi-cheque-printing">
+              <Github className="w-4 h-4 mr-2" />
+              Fork on GitHub
+            </Link>
+          </Button>
+          <Button variant="outline" size="sm" asChild className="bg-blue-500 hover:bg-blue-600 text-white">
+            <Link href="https://github.com/yourusername/boi-cheque-printing">
+              <Star className="w-4 h-4 mr-2" />
+              Star on GitHub
+            </Link>
+          </Button>
         </div>
-        <p className="text-xs text-gray-500 mt-2">
-          Developers can fork the project to contribute, while users can star it to show support!
-        </p>
-      </section>
+      </div>
     </div>
   )
 }
