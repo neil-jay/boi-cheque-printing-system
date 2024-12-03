@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.21](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.20...v0.1.21) (2024-12-03)
+
+
+### Features
+
+* Add link to privacy ([46dc9a1](https://github.com/neil-jay/cheque-printing-system/commit/46dc9a132553d43bc7971e847fb18ca79bfa8450))
+* Add privacy page ([ed5806e](https://github.com/neil-jay/cheque-printing-system/commit/ed5806edfbf9563d7393827feef7579e9f7d9d26))
+
 ### [0.1.20](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.19...v0.1.20) (2024-12-02)
 
 
