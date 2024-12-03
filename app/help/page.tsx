@@ -42,13 +42,13 @@ export default function HelpPage() {
                 How to Print a Cheque
               </h2>
               <ol className="list-decimal list-inside space-y-2 text-gray-800">
-                <li>Enter the payee's name in the "Pay to" field. (Note: The name will be printed in ALL CAPS regardless of how you enter it)</li>
-                <li>Enter the amount in numbers in the "Amount (₹)" field.</li>
+                <li>Enter the payee&apos;s name in the &quot;Pay to&quot; field. (Note: The name will be printed in ALL CAPS regardless of how you enter it)</li>
+                <li>Enter the amount in numbers in the &quot;Amount (₹)&quot; field.</li>
                 <li>Select the date for the cheque.</li>
-                <li>Click the "Generate Cheque" button to preview your cheque.</li>
+                <li>Click the &quot;Generate Cheque&quot; button to preview your cheque.</li>
                 <li>Review the cheque preview carefully. Make sure all details are correct.</li>
-                <li>If everything looks correct, click the "Print Cheque" button.</li>
-                <li>In your browser's print dialog, make sure to select "Actual Size" or "100%" scaling to ensure the cheque prints at the correct size.</li>
+                <li>If everything looks correct, click the &quot;Print Cheque&quot; button.</li>
+                <li>In your browser&apos;s print dialog, make sure to select &quot;Actual Size&quot; or &quot;100%&quot; scaling to ensure the cheque prints at the correct size.</li>
               </ol>
             </section>
 
@@ -68,15 +68,15 @@ export default function HelpPage() {
               <div className="space-y-4">
                 <div>
                   <h3 className="text-xl font-medium text-gray-900">Q: Is it safe to print cheques online?</h3>
-                  <p className="mt-2 text-gray-800">A: Yes, our system is designed with security in mind. We don't store any of your cheque information. All data is processed locally in your browser and is cleared when you close the page.</p>
+                  <p className="mt-2 text-gray-800">A: Yes, our system is designed with security in mind. We don&apos;t store any of your cheque information. All data is processed locally in your browser and is cleared when you close the page.</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-medium text-gray-900">Q: Can I use this system for any Bank of India account?</h3>
                   <p className="mt-2 text-gray-800">A: Yes, this system is designed to work with all Bank of India cheque books. However, always verify the printed cheque against your physical cheque book to ensure compatibility.</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-gray-900">Q: What if my printed cheque doesn't align correctly with my cheque book?</h3>
-                  <p className="mt-2 text-gray-800">A: Ensure you're printing at 100% scale. If issues persist, please contact our support team for assistance.</p>
+                  <h3 className="text-xl font-medium text-gray-900">Q: What if my printed cheque doesn&apos;t align correctly with my cheque book?</h3>
+                  <p className="mt-2 text-gray-800">A: Ensure you&apos;re printing at 100% scale. If issues persist, please contact our support team for assistance.</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-medium text-gray-900">Q: Why is the payee name always in capital letters?</h3>
@@ -90,7 +90,7 @@ export default function HelpPage() {
                 <Phone className="mr-2 h-6 w-6" />
                 Contact Support
               </h2>
-              <p className="text-gray-800 mb-4">If you need further assistance, please don't hesitate to contact our support team:</p>
+              <p className="text-gray-800 mb-4">If you need further assistance, please don&apos;t hesitate to contact our support team:</p>
               <p className="text-gray-800">
                 Email: <a href="mailto:support@boi-chequeprinting.com" className="text-blue-700 hover:underline">support@boi-chequeprinting.com</a><br />
                 Phone: +91 XXXXXXXXXX
