@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.36](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.35...v0.1.36) (2024-12-03)
+
+
+### Bug Fixes
+
+* Fix contrast ratio issue ([228b9db](https://github.com/neil-jay/cheque-printing-system/commit/228b9db257a226c933547bdcd98d9df78eb55826))
+
 ### [0.1.35](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.34...v0.1.35) (2024-12-03)
 
 
