@@ -35,7 +35,7 @@ export default function Footer() {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href="#" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
+                    <Link href="/help" className="text-base text-gray-300 hover:text-white transition duration-150 ease-in-out">
                       Help Center
                     </Link>
                   </li>
@@ -70,3 +70,4 @@ export default function Footer() {
     </footer>
   )
 }
+

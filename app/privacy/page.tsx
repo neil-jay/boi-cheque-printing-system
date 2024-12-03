@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -54,7 +53,7 @@ export default function PrivacyPage() {
           <p>Our website may contain links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.</p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-4">Changes to This Privacy Policy</h2>
-          <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this Privacy Policy.</p>
+          <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-4">Contact Us</h2>
           <p>If you have any questions about this Privacy Policy, please contact us at:</p>
@@ -67,3 +66,4 @@ export default function PrivacyPage() {
     </div>
   )
 }
+

@@ -1,74 +1,53 @@
-import Link from 'next/link'
-import { Button } from "@/components/ui/button"
+import { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-export default function HelpCenter() {
+export const metadata: Metadata = {
+  title: 'Help | Bank of India Cheque Printing System',
+  description: 'Get help with using the Bank of India Cheque Printing System. Learn how to print cheques and troubleshoot common issues.',
+}
+
+export default function HelpPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6 text-center">Help Center</h1>
-        <div className="max-w-3xl mx-auto space-y-8">
-          <section className="text-justify">
-            <h2 className="text-2xl font-semibold mb-4">How to Use the Bank of India Cheque Printing System</h2>
-            <ol className="list-decimal pl-6 space-y-4">
-              <li>
-                <strong>Enter Cheque Details:</strong> Fill in the required fields on the main page, including the payee's name, the amount in numbers, and the date.
-              </li>
-              <li>
-                <strong>Generate Cheque Preview:</strong> After entering the details, click the "Generate Cheque" button to see a preview of your cheque.
-              </li>
-              <li>
-                <strong>Review the Cheque:</strong> Carefully review the generated cheque preview to ensure all details are correct.
-              </li>
-              <li>
-                <strong>Print the Cheque:</strong> If everything looks correct, click the "Print Cheque" button. This will open your browser's print dialog.
-              </li>
-              <li>
-                <strong>Use Proper Paper:</strong> Make sure to load your printer with the official Bank of India cheque paper before printing.
-              </li>
-              <li>
-                <strong>Sign the Cheque:</strong> After printing, don't forget to sign the cheque in the designated area.
-              </li>
-            </ol>
-          </section>
-          <section className="text-justify">
-            <h2 className="text-2xl font-semibold mb-4">Tips for Successful Cheque Printing</h2>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Always double-check the payee name and amount before printing.</li>
-              <li>Ensure your printer is properly calibrated to align with the Bank of India cheque format.</li>
-              <li>If you make a mistake, do not attempt to edit the printed cheque. Instead, void it and print a new one.</li>
-              <li>Keep your Bank of India cheque paper in a secure location.</li>
-            </ul>
-          </section>
-          <section id="open-source" className="text-justify">
-            <h2 className="text-2xl font-semibold mb-4">Open Source Project Information</h2>
-            <p>
-              The Bank of India Cheque Printing System is an open-source project, which means:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>The source code is freely available for anyone to view, use, and modify.</li>
-              <li>Users are encouraged to contribute to the project by suggesting improvements or reporting issues.</li>
-              <li>Developers can fork the project and customize it for their specific needs or to add new features.</li>
-              <li>The project is maintained by a community of volunteers who are passionate about improving financial tools.</li>
-            </ul>
-            <p className="mt-4">
-              If you're interested in contributing to the project or using the code for your own purposes, please visit our 
-              <a href="https://github.com/example/boi-cheque-printing" className="text-blue-600 hover:underline ml-1" target="_blank" rel="noopener noreferrer">
-                GitHub repository
-              </a>.
-            </p>
-          </section>
-          <div className="text-center">
-            <Link href="/">
-              <Button>Return to Cheque Printing</Button>
-            </Link>
+        <div className="prose max-w-3xl mx-auto">
+          <h2 className="text-2xl font-semibold mt-6 mb-4">How to Print a Cheque</h2>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>Enter the payee&apos;s name in the &quot;Pay to&quot; field.</li>
+            <li>Enter the amount in numbers in the &quot;Amount (₹)&quot; field.</li>
+            <li>Select the date for the cheque.</li>
+            <li>Click the &quot;Generate Cheque&quot; button to preview your cheque.</li>
+            <li>Review the cheque preview carefully. Make sure all details are correct.</li>
+            <li>If everything looks correct, click the &quot;Print Cheque&quot; button.</li>
+            <li>In your browser&apos;s print dialog, make sure to select &quot;Actual Size&quot; or &quot;100%&quot; scaling to ensure the cheque prints at the correct size.</li>
+          </ol>
+
+          <h2 className="text-2xl font-semibold mt-6 mb-4">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-xl font-medium">Q: Is it safe to print cheques online?</h3>
+              <p>A: Yes, our system is designed with security in mind. We don&apos;t store any of your cheque information. All data is processed locally in your browser and is cleared when you close the page.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium">Q: Can I use this system for any Bank of India account?</h3>
+              <p>A: Yes, this system is designed to work with all Bank of India cheque books. However, always verify the printed cheque against your physical cheque book to ensure compatibility.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium">Q: What if my printed cheque doesn&apos;t align correctly with my cheque book?</h3>
+              <p>A: Ensure you&apos;re printing at 100% scale. If issues persist, please contact our support team for assistance.</p>
+            </div>
           </div>
+
+          <h2 className="text-2xl font-semibold mt-6 mb-4">Contact Support</h2>
+          <p>If you need further assistance, please don&apos;t hesitate to contact our support team:</p>
+          <p>Email: support@boi-chequeprinting.com<br />
+          Phone: +91 XXXXXXXXXX</p>
         </div>
       </main>
       <Footer />
     </div>
   )
 }
-
