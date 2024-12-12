@@ -7,6 +7,10 @@ interface ChequeData {
   payee: string
   amount: string
   date: string
+  payeePosition: string
+  amountWordsPosition: string
+  amountFiguresPosition: string
+  datePosition: string
 }
 
 interface ChequeFormProps {
@@ -17,7 +21,11 @@ export function ChequeForm({ onSubmit }: ChequeFormProps) {
   const [chequeData, setChequeData] = useState<ChequeData>({
     payee: '',
     amount: '',
-    date: new Date().toISOString().split('T')[0]
+    date: new Date().toISOString().split('T')[0],
+    payeePosition: 'mb-4 mt-[4.6rem] ml-24',
+    amountWordsPosition: 'mb-0 mt-[-0.7rem] ml-36',
+    amountFiguresPosition: 'absolute right-14 top-32 px-4 py-2',
+    datePosition: 'absolute top-8 right-[-0.4rem] p-1'
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -63,6 +71,50 @@ export function ChequeForm({ onSubmit }: ChequeFormProps) {
             name="date"
             type="date"
             value={chequeData.date}
+            onChange={handleChange}
+            required
+            className="max-w-md"
+          />
+        </div>
+        <div>
+          <Label htmlFor="payeePosition">Payee Position (CSS classes)</Label>
+          <Input
+            id="payeePosition"
+            name="payeePosition"
+            value={chequeData.payeePosition}
+            onChange={handleChange}
+            required
+            className="max-w-md"
+          />
+        </div>
+        <div>
+          <Label htmlFor="amountWordsPosition">Amount in Words Position (CSS classes)</Label>
+          <Input
+            id="amountWordsPosition"
+            name="amountWordsPosition"
+            value={chequeData.amountWordsPosition}
+            onChange={handleChange}
+            required
+            className="max-w-md"
+          />
+        </div>
+        <div>
+          <Label htmlFor="amountFiguresPosition">Amount in Figures Position (CSS classes)</Label>
+          <Input
+            id="amountFiguresPosition"
+            name="amountFiguresPosition"
+            value={chequeData.amountFiguresPosition}
+            onChange={handleChange}
+            required
+            className="max-w-md"
+          />
+        </div>
+        <div>
+          <Label htmlFor="datePosition">Date Position (CSS classes)</Label>
+          <Input
+            id="datePosition"
+            name="datePosition"
+            value={chequeData.datePosition}
             onChange={handleChange}
             required
             className="max-w-md"

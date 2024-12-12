@@ -13,6 +13,10 @@ export default function ChequePrinterClient() {
     payee: string
     amount: string
     date: string
+    payeePosition: string
+    amountWordsPosition: string
+    amountFiguresPosition: string
+    datePosition: string
   } | null>(null)
 
   const chequeRef = useRef<HTMLDivElement>(null)
@@ -75,4 +79,3 @@ export default function ChequePrinterClient() {
     </div>
   )
 }
-

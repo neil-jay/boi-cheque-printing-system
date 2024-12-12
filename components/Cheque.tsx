@@ -4,10 +4,14 @@ interface ChequeProps {
   payee: string
   amount: string
   date: string
+  payeePosition: string
+  amountWordsPosition: string
+  amountFiguresPosition: string
+  datePosition: string
 }
 
 export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
-  ({ payee, amount, date }, ref) => {
+  ({ payee, amount, date, payeePosition, amountWordsPosition, amountFiguresPosition, datePosition }, ref) => {
     const formattedAmount = new Intl.NumberFormat('en-IN', {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
@@ -72,7 +76,7 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
         }}
       >
         {/* Date Section */}
-        <div className="absolute top-8 right-[-0.4rem] p-1">
+        <div className={datePosition}>
           <div className="grid grid-cols-8 gap-1">
             {formatDate(date).split('').map((char, i) => (
               <div key={i} className="w-4 h-4 flex items-center justify-center text-xs">
@@ -83,21 +87,21 @@ export const Cheque = forwardRef<HTMLDivElement, ChequeProps>(
         </div>
 
         {/* Payee Name Section */}
-        <div className="mb-4 mt-[4.6rem] ml-24">
+        <div className={payeePosition}>
           <div className="flex-1 uppercase">
             {payee}
           </div>
         </div>
 
         {/* Amount in Words Section */}
-        <div className="mb-0 mt-[-0.7rem] ml-36">
+        <div className={amountWordsPosition}>
           <div className="flex-1">
             {amountInWords}
           </div>
         </div>
 
         {/* Amount in Numbers */}
-        <div className="absolute right-10 top-32 px-4 py-2">
+        <div className={amountFiguresPosition}>
           {formattedAmount}
         </div>
       </div>
