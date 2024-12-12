@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.44](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.43...v0.1.44) (2024-12-12)
+
+
+### Features
+
+* Enable user to set custom value ([d41cd42](https://github.com/neil-jay/cheque-printing-system/commit/d41cd4220411551ed2ca1952b009ffa20cd5d2fc))
+
 ### [0.1.43](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.42...v0.1.43) (2024-12-04)
 
 
