@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.47](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.46...v0.1.47) (2025-06-19)
+
+
+### Bug Fixes
+
+* issue with dark mode ([f89b9ee](https://github.com/neil-jay/cheque-printing-system/commit/f89b9ee27244ced898b0668d38b97801d45dc16c))
+
 ### [0.1.46](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.45...v0.1.46) (2025-06-19)
 
 ### [0.1.45](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.44...v0.1.45) (2024-12-16)
