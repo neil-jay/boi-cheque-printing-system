@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.49](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.48...v0.1.49) (2026-08-19)
+
+
+### Features
+
+* migrate from @cloudflare/next-on-pages to @opennextjs/cloudflare ([539d024](https://github.com/neil-jay/cheque-printing-system/commit/539d024b1522102272439b9d88fa6c748b6693f3))
+
 ### [0.1.48](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.43...v0.1.48) (2026-08-19)
 
 ### [0.1.43](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.42...v0.1.43) (2024-12-04)
