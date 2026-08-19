@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.51](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.50...v0.1.51) (2026-08-19)
+
+
+### Features
+
+* enable Workers observability logs ([029b434](https://github.com/neil-jay/cheque-printing-system/commit/029b4341ea2fe3f0c1ca06dd375be2dafd832f6e))
+
 ### [0.1.50](https://github.com/neil-jay/cheque-printing-system/compare/v0.1.49...v0.1.50) (2026-08-19)
 
 
